@@ -144,7 +144,7 @@ func createLogFile(localPath, outputpath string) {
 	defer f.Close()
 }
 
-// readPassLagerConfigFile is unmarshal the paas lager configuration file(lager.yaml)
+// InitWithFile is unmarshal the paas lager configuration file(lager.yaml)
 func InitWithFile(lagerFile string) error {
 	if lagerFile == "" {
 		log.Printf("log config file is empty, use default config: `%s`\n", marshalDefinition())
